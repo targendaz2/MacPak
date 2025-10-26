@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>package</key>
+	<dict>
+		<key>name</key>
+		<string>Visual Studio Code</string>
+		<key>version</key>
+		<string>1.0.0</string>
+	</dict>
+	<key>components</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>VS Code App</string>
+			<key>type</key>
+			<string>appBundle</string>
+			<key>source</key>
+			<string>https://code.visualstudio.com/sha/download?build=stable&amp;os=darwin-universal</string>
+		</dict>
+	</array>
+</dict>
+</plist>
