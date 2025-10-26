@@ -12,6 +12,8 @@ import SemVer
 public struct AppBundleProvider: Provider {
     public static let type = "appBundle"
     public static let version = Version("0.1.0")!
+    public static let description =
+        "Contributes a macOS app bundle from a specified source to the package."
 
     public func materialize(from declaration: ComponentDeclaration, context: BuildContext) throws
         -> MaterializedComponent
