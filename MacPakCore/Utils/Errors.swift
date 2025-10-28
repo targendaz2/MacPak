@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Errors that can occur during validation of inputs.
 enum ValidationError: Error, CustomStringConvertible {
     case unknownProvider(String)
     case missingOrInvalidArgument(String)

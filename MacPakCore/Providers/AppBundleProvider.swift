@@ -9,6 +9,7 @@
 import Foundation
 import SemVer
 
+/// A provider that contributes a macOS app bundle to the package.
 public struct AppBundleProvider: Provider {
     public static let type = "appBundle"
     public static let version = Version("0.1.0")!

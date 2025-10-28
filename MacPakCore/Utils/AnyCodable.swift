@@ -8,7 +8,9 @@
 
 import Foundation
 
+/// A type-erased Codable wrapper for common types.
 public struct AnyCodable: Codable {
+    /// The underlying value.
     public let value: Any
 
     public init(_ value: Any) { self.value = value }
@@ -31,6 +33,7 @@ public struct AnyCodable: Codable {
         }
     }
 
+    /// Encodes the underlying value.
     public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
         switch value {
