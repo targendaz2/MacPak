@@ -20,6 +20,7 @@ public struct Manifest: Decodable {
     public static func load(from url: URL) throws -> Self {
         let data = try Data(contentsOf: url)
         let decoder = PropertyListDecoder()
+        decoder.semverVersionDecodingStrategy = .string
         return try decoder.decode(Self.self, from: data)
     }
 }
@@ -47,3 +48,4 @@ public struct ComponentDeclaration: Decodable {
     /// The arguments specific to the provider.
     public let arguments: [String: AnyCodable]
 }
+
