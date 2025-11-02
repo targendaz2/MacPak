@@ -9,7 +9,7 @@
 import Foundation
 import SemVer
 
-public struct Manifest: Decodable {
+public struct Manifest: Codable {
     /// The package declaration.
     public var package: PackageDeclaration
     
@@ -26,7 +26,7 @@ public struct Manifest: Decodable {
 }
 
 /// Metadata about the package.
-public struct PackageDeclaration: Decodable {
+public struct PackageDeclaration: Codable {
     /// The name of the package.
     public let name: String
     
@@ -38,7 +38,7 @@ public struct PackageDeclaration: Decodable {
 }
 
 /// A declaration of a component within the package.
-public struct ComponentDeclaration: Decodable {
+public struct ComponentDeclaration: Codable {
     /// The name of the component.
     public let name: String
     
