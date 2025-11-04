@@ -22,3 +22,9 @@ enum ValidationError: Error, CustomStringConvertible {
         }
     }
 }
+
+enum ProviderError: Error {
+    case unknownProvider(String)
+    case missingArgument(String)
+    case invalidArgument(String, String)
+}
